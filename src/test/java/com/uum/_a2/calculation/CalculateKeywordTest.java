@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package calculation;
+package com.uum._a2.calculation;
 
 import org.junit.After;
 import org.junit.AfterClass;

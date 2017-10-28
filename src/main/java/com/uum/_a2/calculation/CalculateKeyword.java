@@ -1,4 +1,4 @@
-package calculation;
+package com.uum._a2.calculation;
 
 import java.util.Scanner;
 

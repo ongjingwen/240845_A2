@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-import calculation.CalculateKeyword;
-import calculation.CalculateLines;
+import com.uum._a2.calculation.CalculateKeyword;
+import com.uum._a2.calculation.CalculateLines;
 import readFile.ReadTextFile;
 import readInfo.ReadInfo;
 import total.Total;

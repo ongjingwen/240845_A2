@@ -5,7 +5,6 @@
  */
 package com.uum._a2.calculation;
 
-import calculation.CalculateLines;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
