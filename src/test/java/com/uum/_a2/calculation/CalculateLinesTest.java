@@ -49,7 +49,7 @@ public class CalculateLinesTest {
         String result = instance.countNumLines(str);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+     
     }
 
     /**
@@ -64,7 +64,7 @@ public class CalculateLinesTest {
         String result = instance.countActualLines(str);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      
     }
 
     /**
@@ -79,7 +79,7 @@ public class CalculateLinesTest {
         String result = instance.countEmptyLines(str);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      
     }
 
     /**
