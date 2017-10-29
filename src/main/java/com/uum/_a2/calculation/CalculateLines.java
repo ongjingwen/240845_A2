@@ -3,7 +3,8 @@ package com.uum._a2.calculation;
 import java.util.Scanner;
 public class CalculateLines {
 	public String countNumLines(String str){
-		   String[] lines = str.split("\r\n|\r|\n");		   
+		   String[] lines = str.split("\r\n|\r|\n");
+                   System.out.println(Integer.toString( lines.length));
 		   return Integer.toString( lines.length);
 		}
 	

@@ -5,6 +5,7 @@
  */
 package readInfo;
 
+import java.io.File;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -43,10 +44,15 @@ public class ReadInfoTest {
     @Test
     public void testReadInfo() {
         System.out.println("ReadInfo");
-        String str = "";
-        ReadInfo instance = new ReadInfo();
-        String[] expResult = null;
-        String[] result = instance.ReadInfo(str);
+        String workingDirectory = System.getProperty("user.dir");
+
+        String absoluteFilePath = "";
+        absoluteFilePath = workingDirectory + File.separator + "TestFIle\\Assignment2_TestFiles\\MyThread1.java";
+        ReadInfo ri = new ReadInfo();
+        String[] info = ri.ReadInfo(absoluteFilePath);
+        System.out.println(info);
+        String[] expResult = info;
+        String[] result = ri.ReadInfo(absoluteFilePath);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
        

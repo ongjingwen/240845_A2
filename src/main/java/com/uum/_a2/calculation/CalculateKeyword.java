@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CalculateKeyword {
 	private String[] keyword = { "package", "class", "extends", "public", "void", "static", "new" };
 	private String[] key;
-	private int[] countkey = { 0, 0, 0, 0, 0, 0, 0 };;
+	private int[] countkey = { 0, 0, 0, 0, 0, 0, 0 };
 	private String currentline = "";
 	private int count = 0;
 

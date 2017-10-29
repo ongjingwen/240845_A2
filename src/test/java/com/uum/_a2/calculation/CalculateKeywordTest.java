@@ -5,12 +5,14 @@
  */
 package com.uum._a2.calculation;
 
+import java.io.File;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import readFile.ReadTextFile;
 
 /**
  *
@@ -42,10 +44,18 @@ public class CalculateKeywordTest {
      */
     @Test
     public void testReadKeyword() {
+        
         System.out.println("ReadKeyword");
         String str = "";
+        String filename1= "TestFIle\\Assignment2_TestFiles\\MyThread1.java";
+        String absoluteFilePath = "";
+        String workingDirectory = System.getProperty("user.dir");
+        absoluteFilePath = workingDirectory + File.separator + filename1;
+        ReadTextFile r = new ReadTextFile();
+        
+        String file = r.ReadFile(absoluteFilePath);
         CalculateKeyword instance = new CalculateKeyword();
-        int[] expResult = null;
+        int[] expResult =  instance.ReadKeyword(file);
         int[] result = instance.ReadKeyword(str);
         assertArrayEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

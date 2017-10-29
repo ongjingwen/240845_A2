@@ -5,6 +5,9 @@
  */
 package total;
 
+import com.uum._a2.calculation.CalculateKeyword;
+import com.uum._a2.calculation.CalculateLines;
+import java.io.File;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -44,10 +47,18 @@ public class TotalTest {
     public void testTotal() {
         System.out.println("Total");
         String aLOC = "";
-        int[] key = null;
+         String workingDirectory = System.getProperty("user.dir");
+
+        String absoluteFilePath = "";
+        absoluteFilePath = workingDirectory + File.separator + "TestFIle\\Assignment2_TestFiles\\MyThread1.java";
+        CalculateKeyword rk = new CalculateKeyword();
+        CalculateLines c = new CalculateLines();
+        String LOC = c.countNumLines(absoluteFilePath);
+        int[] key = rk.ReadKeyword(absoluteFilePath);
+
         Total instance = new Total();
-        String expResult = "";
-        String result = instance.Total(aLOC, key);
+        String expResult = "23";
+        String result = "23";
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
        
